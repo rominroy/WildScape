@@ -19,9 +19,9 @@ const methodOverride=require('method-override')
 const Campground=require('./models/campground')
 const Review=require('./models/review');
 
-const userRoutes=require('./routes/users')
-const campgrounds=require('./routes/campgrounds')
-const reviews=require('./routes/reviews');
+const userRoutes=require('./Routes/users')
+const campgrounds=require('./Routes/campgrounds')
+const reviews=require('./Routes/reviews');
 const { request } = require('http');
 const mongoSanitize=require('express-mongo-sanitize');
 const { db } = require('./models/user');
