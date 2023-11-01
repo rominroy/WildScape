@@ -15,7 +15,7 @@ const upload=multer({storage})
 
 
 router.route('/')
-.get(isLoggedin,catchAsync(campgrounds.index))
+.get(catchAsync(campgrounds.index))
 .post(isLoggedin,upload.array('image'),/*validateCampground,*/catchAsync(campgrounds.createCampground))
 
 router.get('/new',isLoggedin,campgrounds.newForm)
