@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "18.13.0"
+    "node": "14.x"
   },
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.15.3",
